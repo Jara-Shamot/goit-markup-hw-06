@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -37,6 +38,16 @@
             </li>
           </ul>
         </nav>
+        <button class="open-mobile-menu-btn">
+          <svg
+            class="open-mobile-menu-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-burgeer"></use>
+          </svg>
+        </button>
         <address class="adress">
           <ul class="address-list list">
             <li class="address-list-item">
@@ -63,7 +74,11 @@
             Effective Solutions for Your Business
           </h1>
 
-          <button class="button-text button" type="button">
+          <button
+            class="button-text button"
+            onclick="openModal()"
+            type="button"
+          >
             Order Service
           </button>
         </div>
@@ -80,7 +95,7 @@
                 </svg>
               </div>
               <h3 class="all-list-head">Strategy</h3>
-              <p class="list-text">
+              <p class="all-list-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -92,7 +107,7 @@
                 </svg>
               </div>
               <h3 class="all-list-head">Punctuality</h3>
-              <p class="list-text">
+              <p class="all-list-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -104,7 +119,7 @@
                 </svg>
               </div>
               <h3 class="all-list-head">Diligence</h3>
-              <p class="list-text">
+              <p class="all-list-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -116,7 +131,7 @@
                 </svg>
               </div>
               <h3 class="all-list-head">Technologies</h3>
-              <p class="list-text">
+              <p class="all-list-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -126,7 +141,7 @@
       </section>
 
       <!-- our team section three-->
-      <section class="ourteam section">
+      <!-- <section class="ourteam section">
         <div class="container">
           <h2 class="ourteam-title">Our Team</h2>
           <ul class="list conteiner-ourteam">
@@ -317,10 +332,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- our portfolio section vier-->
-      <section class="section portfolio">
+      <!-- <section class="section portfolio">
         <div class="container">
           <h2 class="ourteam-title">Our portfolio</h2>
           <ul class="list portfolio-list">
@@ -440,11 +455,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- footer -->
-    <footer class="footer section">
+    <!-- <footer class="footer section">
       <div class="container footer-box">
         <div class="logo-footer-cont">
           <a href="./index.html" class="footer-logo link"
@@ -519,7 +534,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <!-- BACKDROP WITH MODAL WINDOW -->
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -637,6 +652,94 @@
           <button class="contact-form-submit" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg
+          class="mobile-menu-close-btn-icon"
+          width="8"
+          height="8"
+          aria-label="modal close icon"
+        >
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="menu-mobile list">
+          <li class="menu-title-text-mobile">
+            <a href="./index.html" class="my-link-mobile carent-mobile"
+              >Studio</a
+            >
+          </li>
+          <li class="menu-title-text-mobile">
+            <a href="" class="my-link-mobile">Portfolio</a>
+          </li>
+          <li class="menu-title-text-mobile">
+            <a href="" class="my-link-mobile">Contacts</a>
+          </li>
+        </ul>
+        <address class="link-contact-mobile">
+          <ul class="link-contact-all-mobile list">
+            <li class="contact-all-mobile contact-phone">
+              <a href="tel:+110001111111" class="link-contact-text-mobile"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contact-all-mobile">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link-contact-text-mobile"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <div class="container-social-mobile">
+          <ul class="menu-mobile-social-links-list list">
+            <li class="social-links-list-item">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="social-link-foot"
+                ><svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-list-item">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="social-link-foot"
+                ><svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-list-item">
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="social-link-foot"
+                ><svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-list-item">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                class="social-link-foot"
+                ><svg class="icon-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </body>
 </html>
