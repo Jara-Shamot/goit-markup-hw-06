@@ -79,7 +79,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .container {
         width: 1168px;
         padding-top: 24px;
@@ -125,29 +125,29 @@ img {
 }
 
 .mobile-menu {
-        position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(1);
-            width: 320px;
-        
-            background: #FFF;
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 4px;
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            padding-right: 16px;
-            padding-left: 16px;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 320px;
+
+    background: #FFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
 }
 
 .mobile-menu.is-open {
     opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .close-btn-mobile {
@@ -330,7 +330,7 @@ img {
     }
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .list-social {
         display: flex;
         gap: 40px;
@@ -367,7 +367,7 @@ img {
 @media screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx),
 screen and (min-device-pixel-raito: 2) {
-    .navy-background {
+    .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-mobile@2x.jpg);
     }
 }
@@ -384,7 +384,7 @@ screen and (min-device-pixel-raito: 2) {
 screen and (min-resolution: 2dppx) and (min-width:768px),
 screen and (min-device-pixel-raito: 2) and (min-width:768px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office_pl_x2.jpg);
     }
 }
 
@@ -470,6 +470,9 @@ screen and (min-device-pixel-raito: 2) and (min-width:1158px) {
     .hero {
         padding-top: 72px;
         padding-bottom: 72px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/people_office_pl_x2.jpg);
     }
 }
 
@@ -484,10 +487,14 @@ screen and (min-device-pixel-raito: 2) and (min-width:1158px) {
     }
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .hero {
+        max-width: 1440px;
         padding-top: 188px;
         padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/people-pc@2x.jpg);
     }
 
     .hero-title {
@@ -576,7 +583,7 @@ screen and (min-device-pixel-raito: 2) and (min-width:1158px) {
     }
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .adventages {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -766,7 +773,7 @@ screen and (min-device-pixel-raito: 2) and (min-width:1158px) {
 
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .conteiner-ourteam {
         flex-wrap: nowrap;
         gap: 24px;
@@ -877,7 +884,7 @@ screen and (min-device-pixel-raito: 2) and (min-width:1158px) {
     }
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .portfolio {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -1126,7 +1133,7 @@ screen and (min-device-pixel-raito: 2) and (min-width:1158px) {
     }
 }
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .footer-box {
         display: flex;
         flex-direction: column;
